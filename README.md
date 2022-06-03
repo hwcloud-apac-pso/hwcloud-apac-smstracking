@@ -38,7 +38,7 @@ The solution as shown in Figure 1 is to solve the problem mentioned. Throughout 
 
 #### 4.1 SMS Resource Preparation
 
-In this section, we are going to migrate a workload in TMONE Cloud Alpha Edge (CAE) to Huawei Public Cloud. You may prepare workloads that need to be migrated in your own environment or other cloud environments depending on your needs. The steps are similar and please follow the below instructions for resource creation and migration. You may refer to this link for further details on SMS migration.
+In this section, we are going to migrate a workload in [TMONE Cloud Alpha Edge (CAE)](https://auth.alphaedge.tmone.com.my/authui/login.html?service=https%3A%2F%2Fconsole.alphaedge.tmone.com.my%2Fconsole%2F%3Fregion%3Dmy-kualalumpur-1%26cloud_route_state%3D%2Fhome#/login) to [Huawei Public Cloud](https://auth.huaweicloud.com/authui/login.html?locale=en-us&service=https%3A%2F%2Fwww.huaweicloud.com%2Fintl%2Fen-us%2F#/login). You may prepare workloads that need to be migrated in your own environment or other cloud environments depending on your needs. The steps are similar and please follow the below instructions for resource creation and migration. You may refer to this [link](https://support.huaweicloud.com/intl/en-us/qs-sms/sms3_02_0002.html) for further details on SMS migration.
 
 **Step 1:** Create an ECS in TMONE Cloud Alpha Edge (CAE) environments with the specifications as shown in Figure 2.
 ![figure2](./images/figure2.jpg)
@@ -98,7 +98,7 @@ In this section, we are going to migrate a workload in TMONE Cloud Alpha Edge (C
 
 #### 4.2 Python Scripts Preparation
 
-In this section, we are going to set up the API calls in python files. You may obtain the source code of index.py in this huawei-python-sdk folder under Appendix. Open the index.py file, locate the API calls link as below, and replace the migration task ID with the one that had obtained from Section 4.1 Step 10. 
+In this section, we are going to set up the API calls in python files. You may obtain the source code of **index.py** in this huawei-python-sdk folder under Appendix. Open the **index.py** file, locate the API calls link as below, and replace the migration task ID with the one that had obtained from Section 4.1 Step 10. 
 
 **Step 1:** To obtain the SMS migration task status by calling API. The return state (READY, RUNNING, ABORTING, ABORT, SYNC_SUCCESS, MIGRATE_FAIL, MIGRATE_SUCCESS) will be used for the action taken in Step 2. URI to query the SMS migration task is as shown below.
 
@@ -116,7 +116,7 @@ In this section, we are going to set up the API calls in python files. You may o
 
 <p align="center"> Figure 13: Resume SMS migration task </p>
 
-**Step 3:** To send a notification in terms of SMS/Email to the user regarding the migration task status according to configured conditions. You need to obtain your project id from My Credentials in Huawei Cloud Management Console and SMN urn from the SMN console page. If you do not have a subscription to SMN, please create one. You may refer to the guidelines here.
+**Step 3:** To send a notification in terms of SMS/Email to the user regarding the migration task status according to configured conditions. You need to obtain your project id from [My Credentials](https://console-intl.huaweicloud.com/iam/?agencyId=6c8704a08dc5424e8f72412ad0d009f1®ion=ap-southeast-3&locale=en-us#/mine/apiCredential) in Huawei Cloud Management Console and SMN urn from the [SMN console page](https://console-intl.huaweicloud.com/smn/?agencyId=6c8704a08dc5424e8f72412ad0d009f1®ion=ap-southeast-3&locale=en-us#/topics/list). If you do not have a subscription to SMN, please create one. You may refer to the guidelines [here](https://support.huaweicloud.com/intl/en-us/qs-smn/smn_json.html).
 
 ```POST /v2/{project_id}/notifications/topics/{topic_urn}/publish```
 
