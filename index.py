@@ -1,8 +1,6 @@
 # -*- coding:utf-8 -*-
 from huawei_function_graph.apig_sdk import signer
-from datetime import datetime
 import requests
-import time
 import json
 
 # obtain ak/sk
