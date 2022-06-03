@@ -13,8 +13,7 @@ FunctionGraph hosts and computes event-driven functions in a serverless context 
 
 ## 2.0 Solution Overview
 
-
-
+![figure1](./images/figure1.png)
 *Figure 1: Solution Overview Diagram*
 
 In the case when there is a huge workload (>1TB ) from on-premises, private, or public cloud that needs to be migrated to Huawei Cloud using SMS, a connection error may occur due to an unstable network performance throughout the migration. When the connection between the source server and target server is lost in the middle of migration, an error will be displayed on the SMS console page and users are required to resume back the migration by manually clicking on the start button on the console page. It could be frustrated if the connection is lost at the midnight without the user being aware of it and thus causes the migration to stop until the user resumes back the migration task. This indirectly causes the migration duration longer than expected and unnecessary costs incurred.
