@@ -98,7 +98,7 @@ In this section, we are going to migrate a workload in [TMONE Cloud Alpha Edge (
 
 #### 4.2 Python Scripts Preparation
 
-In this section, we are going to set up the API calls in python files. You may obtain the source code of **index.py** in this huawei-python-sdk folder under Appendix. Open the **index.py** file, locate the API calls link as below, and replace the migration task ID with the one that had obtained from Section 4.1 Step 10. 
+In this section, we are going to set up the API calls in python files. You may obtain the source code of **index.py** in this repository. Open the **index.py** file, locate the API calls link as below, and replace the migration task ID with the one that had obtained from Section 4.1 Step 10. 
 
 **Step 1:** To obtain the SMS migration task status by calling API. The return state (READY, RUNNING, ABORTING, ABORT, SYNC_SUCCESS, MIGRATE_FAIL, MIGRATE_SUCCESS) will be used for the action taken in Step 2. URI to query the SMS migration task is as shown below.
 
